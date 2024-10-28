@@ -1,0 +1,11 @@
+-- CreateTable
+CREATE TABLE `Duck` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+    `color` ENUM('RED', 'GREEN', 'YELLOW', 'BLACK') NOT NULL DEFAULT 'RED',
+    `size` ENUM('XLARGE', 'LARGE', 'MEDIUM', 'SMALL', 'XSMALL') NOT NULL DEFAULT 'LARGE',
+    `price` DOUBLE NOT NULL,
+    `quantity` INTEGER NOT NULL DEFAULT 0,
+    `deleted` BOOLEAN NOT NULL DEFAULT false,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
